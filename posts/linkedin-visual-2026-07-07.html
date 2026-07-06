@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QEH 90% Earnings Contrast - LinkedIn Visual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f0f2f5;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .linkedin-post {
+            width: 1200px;
+            height: 627px;
+            background: linear-gradient(135deg, #ffffff 0%, #f7f9fc 100%);
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .section {
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .section-left {
+            background: linear-gradient(135deg, #e8eef7 0%, #f0f4f8 100%);
+            border-right: 4px solid #0066cc;
+            position: relative;
+        }
+
+        .section-left::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #0066cc, #00b34d);
+        }
+
+        .section-right {
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f5 100%);
+            position: relative;
+        }
+
+        .section-right::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #00b34d, #0066cc);
+        }
+
+        .label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+
+        .amount-main {
+            font-size: 72px;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 20px;
+            color: #0066cc;
+        }
+
+        .section-right .amount-main {
+            color: #00b34d;
+        }
+
+        .amount-description {
+            font-size: 20px;
+            font-weight: 500;
+            color: #4a5568;
+            margin-bottom: 40px;
+            line-height: 1.4;
+        }
+
+        .features {
+            width: 100%;
+            text-align: left;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        .feature:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-icon {
+            font-size: 24px;
+            margin-right: 12px;
+            min-width: 30px;
+        }
+
+        .cta {
+            display: inline-block;
+            background: linear-gradient(135deg, #0066cc, #0052a3);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 102, 204, 0.4);
+        }
+
+        .footer-banner {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0066cc;
+            color: white;
+            padding: 16px;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            display: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            .linkedin-post {
+                width: 100%;
+                max-width: 800px;
+            }
+
+            .amount-main {
+                font-size: 56px;
+            }
+
+            .section {
+                padding: 40px 30px;
+            }
+        }
+
+        .arrow {
+            font-size: 32px;
+            margin: 20px 0;
+            opacity: 0.6;
+        }
+
+        .comparison-text {
+            font-size: 18px;
+            color: #666;
+            font-weight: 500;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="linkedin-post">
+        <div class="section section-left">
+            <div class="label">As an Employee</div>
+            <div class="amount-main">15-20%</div>
+            <div class="amount-description">Of what you bill</div>
+
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">❌</span>
+                    <span>No brand control</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">❌</span>
+                    <span>No client relationships</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">❌</span>
+                    <span>Admin overhead</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">❌</span>
+                    <span>Manager approval</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">❌</span>
+                    <span>Limited earning potential</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-right">
+            <div class="label">As an Independent Operator</div>
+            <div class="amount-main">90%</div>
+            <div class="amount-description">Of every dollar you bill</div>
+
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">✅</span>
+                    <span>Your brand, your rules</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✅</span>
+                    <span>Direct client relationships</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✅</span>
+                    <span>Admin handled for you</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✅</span>
+                    <span>Your decisions, your pace</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✅</span>
+                    <span>Unlimited earning potential</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
