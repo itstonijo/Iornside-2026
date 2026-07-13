@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Campaign log for the QEH / 2026 recruitment-agency landing page. Each entry documents a marketing campaign driving traffic to the site, using the same UTM vocabulary that assets/scrobe.js reads from inbound URLs (source, medium, campaign, content, term).",
+  "updated": "2026-07-13",
+  "campaigns": [
+    {
+      "id": "xr-services-linkedin-strategy-call",
+      "name": "Strategy Call — LinkedIn (Services)",
+      "channel": "LinkedIn",
+      "status": "live",
+      "utm": {
+        "source": "linkedin",
+        "medium": "social",
+        "campaign": "xr-services",
+        "content": "book-strategy-call",
+        "term": null
+      },
+      "destination": "https://www.xrecruiter.io/strategy-call",
+      "cta": "book-strategy-call",
+      "notes": "Primary conversion path. Matches the footer CTA href in index.html and the data-cta=\"footer\" click event captured by scrobe.js."
+    }
+  ]
+}
